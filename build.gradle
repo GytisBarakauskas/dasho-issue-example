@@ -1,10 +1,12 @@
 buildscript {
     repositories {
-        maven { url 'https://maven.preemptive.com' }
+        //maven { url 'https://maven.preemptive.com' }
+        flatDir { dirs("/Applications/PreEmptive Protection DashO 12.3.app/Contents/Java/gradle") }
     }
 
     dependencies {
-        classpath 'com.preemptive.dasho:dasho-android:1.5.7'
+        //classpath 'com.preemptive.dasho:dasho-android:1.5.7'
+        classpath "com.preemptive.dasho:dasho-android:1.5.7.1-1_5_7_BugFix.1+de99b96"
     }
 }
 
